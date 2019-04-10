@@ -14,7 +14,9 @@ const FetchGenerator = function () {
     this.generate = function (context, requests) {
         const template = require('./template');
 
-        return requests.reduce((result, request) => {
+        const reqArray = Array.isArray(requests) ? requests : [requests];
+
+        return reqArray.reduce((result, request) => {
             return result += template(request);
         }, '');
     };

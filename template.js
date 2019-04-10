@@ -30,7 +30,7 @@ const template = function (request) {
         data.body = typeMapper[contentType] || body;
     }
 
-    let fetchRequest = JSON.stringify(data, null, 6);
+    const fetchRequest = JSON.stringify(data, null, 6);
 
     // how to handle the response
     const callbackMethod = request.getHeaderByName('Accept') === 'application/json' ? 'json' : 'text';
