@@ -1,4 +1,4 @@
-# Paw-FetchGenertor
+# Paw-FetchGenerator
 
 > Paw Code Generator Extension for browser Fetch
 
